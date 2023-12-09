@@ -1,5 +1,11 @@
 package main
 
-type LootBox struct {
-	items []Hat
+type Chest struct {
+	items []Item
+}
+
+func (c *Chest) NewChest(i []Item) Chest {
+	return Chest{
+		items: i,
+	}
 }

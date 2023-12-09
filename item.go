@@ -10,7 +10,7 @@ const (
 	Blue   Rarity = 79.92327
 )
 
-type Hat struct {
+type Item struct {
 	Name   string
 	Rarity Rarity
 }
