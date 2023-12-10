@@ -14,8 +14,6 @@ func NewChest(i []Item) Chest {
 	}
 }
 
-//sort the chest by rarity on create chest
-
 func (c *Chest) OpenChest() Item {
 	totalPercentage := 0.0
 	for _, item := range c.items {
