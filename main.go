@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 var caseItem = []Item{
 	{
 		Name:   "----------------------------M4A4 | Eye of Horus",
@@ -82,5 +84,14 @@ var caseItem = []Item{
 func main() {
 
 	anubisCase := NewChest(caseItem)
-	anubisCase.OpenChest()
+	fmt.Println(anubisCase.OpenChest())
+	// temp := 10.0
+	// tries := 0
+
+	// for temp > 0.63940 {
+	// 	item := anubisCase.OpenChest()
+	// 	temp = float64(item.Rarity)
+	// 	fmt.Println("tries: ", tries, item)
+	// 	tries += 1
+	// }
 }
